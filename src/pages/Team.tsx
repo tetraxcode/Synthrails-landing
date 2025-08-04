@@ -18,7 +18,7 @@ const Team = () => {
         },
         {
             name: "Luella Fu",
-            role: "CRO & Co-Founder",
+            role: "CTO & Co-Founder",
             image: "https://zwive.s3.us-west-1.amazonaws.com/founder+images/Luella.jpeg",
             experience: "Tenured Professor SFSU • Ex-Meta",
             education: "PhD Statistics USC • MS Yale",

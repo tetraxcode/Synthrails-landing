@@ -11,7 +11,7 @@ const Team = () => {
         {
             name: "Abhinav Reddy Palle",
             role: "CEO & Co-Founder",
-            image: "/src/assets/founders/Abhinav.JPG", // Using path directly
+            image: "https://zwive.s3.us-west-1.amazonaws.com/founder+images/Abhinav.JPG",
             experience: "Software Engineer at Waymo, Google, Flexport",
             education: "MS Computer Science, UCR",
             linkedin: "https://www.linkedin.com/in/abhinavreddy-palle/",
@@ -19,7 +19,7 @@ const Team = () => {
         {
             name: "Luella Fu",
             role: "CRO & Co-Founder",
-            image: "/src/assets/founders/Luella.jpeg", // Using path directly
+            image: "https://zwive.s3.us-west-1.amazonaws.com/founder+images/Luella.jpeg",
             experience: "Tenured Professor SFSU • Ex-Meta",
             education: "PhD Statistics USC • MS Yale",
             linkedin: "https://www.linkedin.com/in/luella-fu-9575551b/",
@@ -44,8 +44,8 @@ const Team = () => {
                         </h1>
 
                         <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
-                            Engineers from Waymo, Google, and Meta combined with tenured research
-                            expertise from USC and Yale.
+                            Engineers from Waymo, Google, and Meta combined with
+                            tenured research expertise from USC and Yale.
                         </p>
                     </div>
                 </div>
@@ -67,10 +67,14 @@ const Team = () => {
                                 <h2 className="text-3xl font-bold text-white mb-2">
                                     {founder.name}
                                 </h2>
-                                <div className="text-xl text-gray-400 mb-4">{founder.role}</div>
+                                <div className="text-xl text-gray-400 mb-4">
+                                    {founder.role}
+                                </div>
                                 <div className="text-lg text-gray-500 mb-6 leading-relaxed max-w-md mx-auto">
                                     <p className="mb-2">{founder.experience}</p>
-                                    <p className="text-gray-400">{founder.education}</p>
+                                    <p className="text-gray-400">
+                                        {founder.education}
+                                    </p>
                                 </div>
                                 <a
                                     href={founder.linkedin}
@@ -101,7 +105,8 @@ const Team = () => {
                             Ready to Build the Future?
                         </h2>
                         <p className="text-xl text-gray-400 mb-10">
-                            Let's discuss how we can accelerate the future of robotics together.
+                            Let's discuss how we can accelerate the future of
+                            robotics together.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
@@ -118,4 +123,4 @@ const Team = () => {
     );
 };
 
-export default Team; 
+export default Team;
